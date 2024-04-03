@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 require('dotenv').config();
 
+mongoose.set('strictQuery', true);
 
 var users = require('./routes/users');
 
