@@ -3,6 +3,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
+require('dotenv').config();
+
 
 var users = require('./routes/users');
 
